@@ -4,10 +4,11 @@ class CreateModels < ActiveRecord::Migration[6.0]
       t.string :name
       t.integer :year
       t.integer :msrp
-      t.string :type
+      t.string :car_type
       t.string :hp
       t.string :mpg
-      t.integer :seating
+      t.string :torque
+      t.integer :seats
       t.string :description
       t.boolean :favorite
       t.string :image
