@@ -8,4 +8,6 @@ class Api::V1::ModelsController < ApplicationController
         model = Model.find(params[:id])
         render json: model
     end
+
+    
 end
