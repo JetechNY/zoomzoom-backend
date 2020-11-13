@@ -75,7 +75,7 @@ mpg: "31 EPA-EST HWY MPG",
 seats: 5,
 description: "HATACHBACK'S SUAVE ALTER EGO. THE NEW TURBO SEDAN: FOR THE REFINED PALATE. Destined to be a classic of the modern age, the 2021 Mazda3 2.5 Turbo Sedan will deliver up to 250 hp2 and 320 lb-ft of torque,2 coupled with our i-Activ AWD®. All of which work in harmony to respond with grace, and a bit of a growl, to every instinct, to make you feel something that no other car can.",
 favorite: false,
-image: "https://www.mazdausa.com/siteassets/vehicles/2021/mazda3-sedan/trims/carousel/2021-mazda3-sedan-turboplus-machinegray-trim-select-v1.2.png",
+image: "https://www.mazdausa.com/siteassets/vehicles/2021/mazda3-sedan/trims/34-profiles/turbo-premium-plus/updated/my21_mazda3_sedan_awd_turbopremiumplus_soulredcrystal.png",
 make: Make.first
 },
 {name: "MAZDA3 HATCHBACK",
