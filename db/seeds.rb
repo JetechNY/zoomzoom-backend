@@ -1,4 +1,5 @@
 Make.create(name: 'Mazda')
+Make.create(name: 'Subaru')
 
 mazdas = [{name: "CX-3",
 year: 2020,
@@ -131,18 +132,17 @@ image: "https://www.mazdausa.com/siteassets/vehicles/2020/mx-5-rf/trims/gt/34-je
 make: Make.first
 }]
 
-
-
 mazdas.each do |model|
     Model.create(model)
 end
 
+10.times do
+    Model.create(name: Faker::Vehicle.unique.model, year: Faker::Vehicle.year, msrp: Faker::Vehicle.mileage(min: 20_000, max: 50_000), car_type: Faker::Vehicle.drive_type, hp: "Over 9000", torque: "To the Max", mpg: "Who cares", seats: Faker::Vehicle.doors, description: Faker::Restaurant.description, favorite: false, image:"https://1000logos.net/wp-content/uploads/2020/06/STI-Logo-500x281.png", make: Make.second )
+end
 
-30.times do
+100.times do
     Review.create(review: Faker::Marketing.buzzwords, model: Model.all.sample)
 end
 
 
-# 50.times do
-#     Model.create(name:, year:, msrp:, car_type:, hp:, torque:, mpg:, seats:, description:, favorite:, image:, make:)
-# end
+
