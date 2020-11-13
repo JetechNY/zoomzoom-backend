@@ -12,9 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2020_11_09_230701) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "makes", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
@@ -33,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_11_09_230701) do
     t.string "description"
     t.boolean "favorite"
     t.string "image"
-    t.bigint "make_id", null: false
+    t.integer "make_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["make_id"], name: "index_models_on_make_id"
@@ -41,7 +38,7 @@ ActiveRecord::Schema.define(version: 2020_11_09_230701) do
 
   create_table "reviews", force: :cascade do |t|
     t.string "review"
-    t.bigint "model_id", null: false
+    t.integer "model_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["model_id"], name: "index_reviews_on_model_id"
